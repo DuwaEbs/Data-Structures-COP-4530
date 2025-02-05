@@ -8,6 +8,8 @@ public:
     class IntDLLNode *next;
     class IntDLLNode *prev;
 
+    IntDLLNode() = default;
+    
     IntDLLNode(int el, IntDLLNode *ptr1 = 0, 
                        IntDLLNode *ptr2 = 0) 
     {
