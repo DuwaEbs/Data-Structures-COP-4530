@@ -20,7 +20,7 @@ public:
     void deleteNode(int);
 
     bool isInList(int) const;
-
+    
     void printAll() const;
 
     std::string addToString() const; // returns the string of the ordered integers
@@ -28,6 +28,10 @@ public:
 private:
     IntDLLNode *head;
     IntDLLNode *tail;
+
+protected:
+    void add(IntDLLNode* oldNode, int n);
+    void deleteNode(IntDLLNode* oldNode);
 
 };
 
