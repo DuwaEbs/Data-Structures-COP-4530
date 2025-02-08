@@ -6,33 +6,33 @@ class IntDLList{
 
 public:
     //constructor and destructor
-    IntDLList();
-    ~IntDLList();
+    IntDLList(); //done
+    ~IntDLList(); //done
     
-    bool empty() const;
-    void addToHead(int);
-    void insertInOrder(int);
-    void addToTail(int);
+    bool empty() const;//done
+    void addToHead(int); //ryan done
+    void insertInOrder(int); //done
+    void addToTail(int); //ryan done
 
-    int deleteFromHead(); //deletes the head and returns its value
-    int deleteFromTail(); // deletes the tail and returns its value
+    int deleteFromHead(); //deletes the head and returns its value //ryan done
+    int deleteFromTail(); // deletes the tail and returns its value//ryan done
 
-    void deleteNode(int);
-
-    bool isInList(int) const;
+    void deleteNode(int); //done
+                            
+    bool isInList(int) const; //done
     
-    void printAll() const;
-
-    std::string addToString() const; // returns the string of the ordered integers
+    void printAll() const; //done
+                    
+    std::string addToString() const; // returns the string of the ordered integers //COLLAB AL FINAL
 
 private:
     IntDLLNode *head;
     IntDLLNode *tail;
-
 protected:
-    void add(IntDLLNode* oldNode, int n);
-    void deleteNode(IntDLLNode* oldNode);
+    void add(IntDLLNode* oldNode, int n); //done kinda
+    void removeNode(IntDLLNode* oldNode);
 
 };
 
 #endif
+//what functions you wanna make, i could lock in on add and delete if you wanna work on some other ones. i like that
